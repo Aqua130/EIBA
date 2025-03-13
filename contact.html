@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ending Image-Based Abuse Contact</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #f9f9f9;
+        }
+        .navbar {
+            background-color: #1a1a1a !important;
+        }
+        .navbar-nav .nav-link {
+            color: #4bb7dd !important;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        .navbar-nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar-brand img {
+            width: 100px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: white;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 50px 0;
+        }
+        .contact-section h2 {
+            text-align: center;
+            color: #4bb7dd;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .contact-section p {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .form-control {
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .btn-custom {
+            background-color: #4bb7dd;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #3a98b6;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <!-- Logo aligned to the left -->
+        <a class="navbar-brand" href="home.html">
+            <img src="Ending Image Based Abuse.png" alt="Logo">
+        </a>
+
+        <!-- Navbar links evenly spaced -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">FAQs</a></li>
+                        <li><a class="dropdown-item" href="#">Laws and Legislations</a></li>
+                        <li><a class="dropdown-item" href="#">Statistics</a></li>
+                        <li><a class="dropdown-item" href="#">Forums</a></li>
+                        <li><a class="dropdown-item" href="#">Stories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tools</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Chat Bot</a></li>
+                        <li><a class="dropdown-item" href="#">Anonymous Discussion</a></li>
+                        <li><a class="dropdown-item" href="#">What Can I Do Survey</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contact Section -->
+<div class="container">
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, concerns, or need support, feel free to reach out.</p>
+
+        <!-- Contact Information -->
+        <div class="text-center mb-4">
+            <p><strong>Email:</strong> info@endingimagebasedabuse.org</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Address:</strong> 67 Elimatta Dr, Ashgrove QLD 4060</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message..." required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-custom">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

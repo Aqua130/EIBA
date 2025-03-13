@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ending Image-Based Abuse</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #f9f9f9;
+            transition: opacity 0.3s ease;
+        }
+        .navbar {
+            background-color: #1a1a1a !important;
+        }
+        .navbar-nav .nav-link {
+            color: #4bb7dd !important;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        .navbar-nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar-brand img {
+            width: 100px;
+        }
+        .section-title {
+            text-align: center;
+            color: #ff63c3;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .full-width-section {
+            background-color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .content-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .dropdown-toggle {
+            width: 100%;
+            text-align: left;
+            border-radius: 15px;
+        }
+        .btn-link {
+            background-color: #f8f9fa;
+            border: 2px solid #4bb7dd;
+            color: #000;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 100%;
+        }
+        .btn-link:hover {
+            background-color: #4bb7dd;
+            color: white;
+        }
+        .section-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Hover Effect */
+        .content-box:hover {
+            transform: scale(1.05) rotate(1deg);
+            animation: wiggle 0.2s ease-in-out infinite;
+            opacity: 1 !important;
+        }
+
+        /* Wiggle Animation */
+        @keyframes wiggle {
+            0% {
+                transform: scale(1.05) rotate(1deg);
+            }
+            50% {
+                transform: scale(1.05) rotate(-1deg);
+            }
+            100% {
+                transform: scale(1.05) rotate(1deg);
+            }
+        }
+
+        /* Fade Effect on Other Elements */
+        .content-box:hover ~ .content-box, 
+        .content-box:hover ~ .section-container > * {
+            opacity: 0.4;
+        }
+
+        .content-box:hover ~ .section-container > *:not(.content-box) {
+            transition: opacity 0.3s ease;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #4bb7dd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <!-- Logo aligned to the left -->
+        <a class="navbar-brand" href="home.html">
+            <img src="Ending Image Based Abuse.png" alt="Logo">
+        </a>
+
+        <!-- Navbar links evenly spaced -->
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">FAQs</a></li>
+                        <li><a class="dropdown-item" href="#">Laws and Legislations</a></li>
+                        <li><a class="dropdown-item" href="#">Statistics</a></li>
+                        <li><a class="dropdown-item" href="#">Forums</a></li>
+                        <li><a class="dropdown-item" href="#">Stories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tools</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Chat Bot</a></li>
+                        <li><a class="dropdown-item" href="#">Anonymous Discussion</a></li>
+                        <li><a class="dropdown-item" href="#">What Can I Do Survey</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5 pt-5">
+
+    <!-- Full Width Section -->
+    <div class="full-width-section">
+        <h2 class="section-title">WHAT IS IMAGE BASED ABUSE?</h2>
+        <p>The act of purposefully sharing or threatening to share an intimate image or video of someone without their consent for 'revenge' or manipulation. Common examples include someone doing it to hurt a person who has ended a relationship with them, or threatening to do it unless they stay together. Image based abuse is extremely common amongst young Australians such as yourselves, so it is important that all young people are educated on the risks, laws, and signs of image based abuse.</p>
+    </div>
+
+    <!-- Sections Container -->
+    <div class="section-container">
+        <!-- Learn More -->
+        <div class="content-box">
+            <h3 class="section-title">LEARN MORE</h3>
+            <a href="#" class="btn-link">Statistics</a>
+            <a href="#" class="btn-link">What you can do to help</a>
+            <a href="#" class="btn-link">Our Goals</a>
+            <a href="#" class="btn-link">Signs of Image Based Abuse</a>
+        </div>
+
+        <!-- Resources -->
+        <div class="content-box">
+            <h3 class="section-title">RESOURCES</h3>
+            <a href="#" class="btn-link">Forums</a>
+            <a href="#" class="btn-link">FAQs</a>
+            <a href="#" class="btn-link">Laws & Legislations</a>
+            <a href="#" class="btn-link">Statistics</a>
+        </div>
+
+        <!-- Tools -->
+        <div class="content-box">
+            <h3 class="section-title">TOOLS</h3>
+            <a href="#" class="btn-link">Chatbot</a>
+            <a href="#" class="btn-link">Anonymous Discussion</a>
+            <a href="#" class="btn-link">What Can I Do Survey</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Include Zapier Script -->
+<script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+
+<style>
+    /* Floating Chat Button */
+    .chat-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4bb7dd;
+        color: white;
+        border: none;
+        padding: 12px 18px;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+
+    .chat-btn:hover {
+        background-color: #3a98b6;
+    }
+
+    /* Chatbot Modal */
+    .chat-modal {
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 350px;
+        height: 500px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+    /* Close Button */
+    .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+    }
+</style>
+
+<!-- Floating Chat Button -->
+<button class="chat-btn" onclick="toggleChat()">💬 Chat</button>
+
+<!-- Chatbot Modal -->
+<div id="chat-modal" class="chat-modal">
+    <button class="close-btn" onclick="toggleChat()">✖</button>
+    <zapier-interfaces-chatbot-embed 
+        is-popup="false" 
+        chatbot-id="cm85f2qmy002cabewxfyiewx2"
+        style="width:100%; height:100%;">
+    </zapier-interfaces-chatbot-embed>
+</div>
+
+<script>
+    function toggleChat() {
+        let chatModal = document.getElementById("chat-modal");
+        chatModal.style.display = (chatModal.style.display === "none" || chatModal.style.display === "") ? "block" : "none";
+    }
+</script>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Ending Image-Based Abuse. All rights reserved.</p>
+    <p>Contact us at: <a href="mailto:info@endingimagebasedabuse.org">info@endingimagebasedabuse.org</a></p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
